@@ -9,7 +9,7 @@ const channels = [
 export function Contact() {
   return (
     <section className="bg-[#19324A] text-white">
-      <div className="mx-auto max-w-7xl px-5 py-10 sm:px-8 md:py-14 lg:px-10">
+      <div className="site-container py-10 md:py-14">
         <div className="grid gap-8 md:grid-cols-[0.85fr_1.15fr] md:gap-12">
           <div>
             <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#c3d1dc]">Contact</p>

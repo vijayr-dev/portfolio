@@ -4,7 +4,7 @@ export function Achievements() {
   const achievement = achievements[0];
 
   return (
-    <section className="mx-auto max-w-7xl px-5 py-9 sm:px-8 md:py-12 lg:px-10">
+    <section className="site-container py-9 md:py-12">
       <div className="grid gap-3 md:grid-cols-2">
         <article className="relative overflow-hidden bg-[#19324A] p-6 text-white sm:p-8">
           <span className="absolute -right-2 -top-12 select-none text-[10rem] font-medium leading-none text-white/[0.04]" aria-hidden="true">01</span>

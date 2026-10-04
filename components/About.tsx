@@ -3,7 +3,7 @@ import { Portrait } from "@/components/Portrait";
 
 export function About() {
   return (
-    <div className="mx-auto max-w-7xl px-5 py-10 sm:px-8 md:py-14 lg:px-10">
+    <div className="site-container py-10 md:py-14">
       <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:gap-12">
         <figure className="relative w-full max-w-md self-start">
           <div className="absolute -bottom-3 -right-3 -z-10 h-2/3 w-2/3 bg-[#E9EFF3]" aria-hidden="true" />
@@ -23,7 +23,7 @@ export function About() {
 
           <div className="mt-7 border-t border-[#deded9] pt-4">
             <h2 className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#19324A]">01 · Career journey</h2>
-            <div className="mt-4 grid gap-x-8 sm:grid-cols-2">
+            <div className="mt-4 grid gap-x-8 md:grid-cols-2">
               {experienceTimeline.map((item) => (
                 <div key={`${item.company}-${item.role}`} className="border-b border-[#e5e5e1] py-3">
                   <p className="text-xs text-[#777b7d]">{item.period}</p>
@@ -36,7 +36,7 @@ export function About() {
 
           <div className="mt-7 border-t border-[#deded9] pt-4">
             <h2 className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#19324A]">02 · Education</h2>
-            <div className="mt-4 grid gap-x-8 sm:grid-cols-2">
+            <div className="mt-4 grid gap-x-8 md:grid-cols-2">
               {education.map((item) => (
                 <div key={item.title} className="border-b border-[#e5e5e1] py-3">
                   <p className="text-sm font-medium text-[#171717]">{item.title}</p>

@@ -4,7 +4,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 export function ProjectsGrid() {
   return (
     <section id="projects" className="border-y border-[#e5e5e1] bg-[#f1f2ef]">
-      <div className="mx-auto max-w-7xl px-5 py-20 sm:px-8 md:py-24 lg:px-10">
+      <div className="site-container py-14 sm:py-16 md:py-24">
         <SectionHeader
           eyebrow="Projects"
           title="Additional work"

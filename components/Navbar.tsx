@@ -41,7 +41,7 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-[#e5e5e1] bg-[#F7F7F5]/95">
-      <nav className="mx-auto flex min-h-[72px] max-w-7xl items-center justify-between gap-5 px-5 sm:px-8 lg:px-10" aria-label="Main navigation">
+      <nav className="site-container flex min-h-[72px] items-center justify-between gap-5" aria-label="Main navigation">
         <Link href="/" className="shrink-0 text-[11px] font-semibold uppercase tracking-[0.16em] text-[#19324A]">
           Divyansh Rathore
         </Link>
@@ -71,7 +71,7 @@ export function Navbar() {
           aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
           aria-expanded={isOpen}
           onClick={() => setIsOpen(!isOpen)}
-          className="rounded border border-[#d9d9d4] p-2 text-[#19324A] xl:hidden"
+          className="flex min-h-11 min-w-11 flex-col items-center justify-center rounded border border-[#d9d9d4] p-2 text-[#19324A] xl:hidden"
         >
           <span className="block h-px w-5 bg-current" />
           <span className="mt-1.5 block h-px w-5 bg-current" />
@@ -81,7 +81,7 @@ export function Navbar() {
 
       {isOpen ? (
         <div className="border-t border-[#e5e5e1] bg-[#F7F7F5] xl:hidden">
-          <div className="mx-auto flex max-w-7xl flex-col gap-1 px-5 py-4 sm:px-8">
+          <div className="site-container flex flex-col gap-1 py-4">
             {navItems.map((item) => (
               <Link key={item.href} href={item.href} aria-current={isActive(item.href) ? "page" : undefined} onClick={() => setIsOpen(false)} className={`py-2 text-sm hover:text-[#19324A] ${isActive(item.href) ? "font-medium text-[#19324A]" : "text-[#4f5357]"}`}>
                 {item.label}

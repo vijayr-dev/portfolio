@@ -3,7 +3,7 @@ import { experienceTimeline } from "@/data/portfolio";
 export function ExperienceTimeline() {
   return (
     <section id="experience" className="border-y border-[#e5e5e1] bg-[#F7F7F5]">
-      <div className="mx-auto max-w-7xl px-5 py-7 sm:px-8 md:py-9 lg:px-10">
+      <div className="site-container py-7 md:py-9">
         <div className="relative border-t border-[#dcdedb] before:absolute before:bottom-0 before:left-[7px] before:top-0 before:w-px before:bg-[#d5dfe5] md:before:left-[calc(25%-1px)]">
           {[...experienceTimeline].reverse().map((item) => (
             <article

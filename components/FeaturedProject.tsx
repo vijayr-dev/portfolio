@@ -3,7 +3,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 
 export function FeaturedProject() {
   return (
-    <section className="mx-auto max-w-7xl px-5 py-20 sm:px-8 md:py-24 lg:px-10">
+    <section className="site-container py-14 sm:py-16 md:py-24">
       <SectionHeader
         eyebrow="Featured project"
         title={featuredProject.title}

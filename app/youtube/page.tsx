@@ -12,7 +12,7 @@ export default function YouTubePage() {
   return (
     <>
       <PageIntro eyebrow="YouTube" title="Divyansh Rathore on YouTube" description="Recent uploads and channel updates." />
-      <YouTubeSection />
+      <YouTubeSection variant="archive" />
     </>
   );
 }

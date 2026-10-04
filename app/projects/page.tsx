@@ -36,7 +36,7 @@ export default function ProjectsPage() {
   return (
     <>
       <PageIntro eyebrow="Projects" title="Selected work" description="Engineering and web projects across production automation, healthcare concepting, client work, and digital seva." />
-      <section className="mx-auto max-w-7xl px-5 py-9 sm:px-8 md:py-12 lg:px-10">
+      <section className="site-container py-9 md:py-12">
         <article className="grid overflow-hidden border border-[#d7e0e5] bg-[#E9EFF3] md:grid-cols-[1.15fr_0.85fr]">
           <div className="p-6 sm:p-9">
             <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#19324A]">Featured project · 01</p>

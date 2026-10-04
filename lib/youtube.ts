@@ -33,7 +33,7 @@ export async function getYoutubeVideos(): Promise<YoutubeVideo[]> {
   searchUrl.searchParams.set("channelId", channelId);
   searchUrl.searchParams.set("part", "snippet");
   searchUrl.searchParams.set("order", "date");
-  searchUrl.searchParams.set("maxResults", "3");
+  searchUrl.searchParams.set("maxResults", "12");
   searchUrl.searchParams.set("type", "video");
 
   const response = await fetch(searchUrl.toString(), {
@@ -48,24 +48,24 @@ export async function getYoutubeVideos(): Promise<YoutubeVideo[]> {
   const items = Array.isArray(data.items) ? data.items : [];
 
   return items.flatMap((item) => {
-      const snippet = item.snippet ?? {};
-      const id = item.id?.videoId;
-      const publishedAt = snippet.publishedAt;
-      const title = snippet.title;
-      const thumbnail =
-        snippet.thumbnails?.high?.url ??
-        snippet.thumbnails?.medium?.url;
+    const snippet = item.snippet ?? {};
+    const id = item.id?.videoId;
+    const publishedAt = snippet.publishedAt;
+    const title = snippet.title;
+    const thumbnail =
+      snippet.thumbnails?.high?.url ??
+      snippet.thumbnails?.medium?.url;
 
-      if (!id || !publishedAt || !title || !thumbnail) {
-        return [];
-      }
+    if (!id || !publishedAt || !title || !thumbnail) {
+      return [];
+    }
 
-      return [{
-        title,
-        thumbnail,
-        publishedAt,
-        url: `https://www.youtube.com/watch?v=${id}`,
-        embedUrl: `https://www.youtube.com/embed/${id}`,
-      }];
-    }).slice(0, 3);
+    return [{
+      title,
+      thumbnail,
+      publishedAt,
+      url: `https://www.youtube.com/watch?v=${id}`,
+      embedUrl: `https://www.youtube.com/embed/${id}`,
+    }];
+  }).slice(0, 12);
 }

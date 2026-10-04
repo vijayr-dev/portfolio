@@ -23,12 +23,17 @@ npm run dev
 
 ## YouTube setup
 
-The server-side route at `/api/youtube` fetches current uploads through the YouTube Data API. It reads credentials only on the server.
+The server-side route at `/api/youtube` fetches the 12 latest public uploads through the YouTube Data API, revalidating the upstream feed every hour. Home displays the latest three; `/youtube` features the newest video and lists the remaining uploads. Credentials are read only on the server.
 
 1. Copy `.env.example` to `.env.local`.
 2. Set `YOUTUBE_API_KEY` and `YOUTUBE_CHANNEL_ID`.
 
-Without credentials, the video area stays empty and offers a link to the channel. It does not show fabricated video entries or thumbnails.
+For Vercel, open the project **Settings → Environment Variables** and add:
+
+- `YOUTUBE_API_KEY` — a YouTube Data API v3 key created in Google Cloud Console.
+- `YOUTUBE_CHANNEL_ID` — the channel ID for `@thedivyansh9290` (find it in YouTube Studio under **Settings → Channel → Advanced settings**).
+
+Apply the variables to the deployment environments you use, then redeploy. Do not use a `NEXT_PUBLIC_` prefix for the API key. Without credentials, the video area explains the setup and links to the channel; it never shows fabricated video entries or thumbnails.
 
 ## Portrait image
 

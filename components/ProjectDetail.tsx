@@ -16,7 +16,7 @@ export function ProjectDetail({ eyebrow, title, description, sections = [], tech
   return (
     <>
       <PageIntro eyebrow={eyebrow} title={title} description={description} />
-      <article className="mx-auto max-w-7xl px-5 py-8 sm:px-8 md:py-12 lg:px-10">
+      <article className="site-container py-8 md:py-12">
         {impact ? (
           <div className="mb-9 grid gap-5 bg-[#19324A] px-5 py-6 text-white sm:grid-cols-[0.7fr_1.3fr] sm:items-center sm:px-8">
             <p className="text-[10px] font-semibold uppercase tracking-[0.17em] text-[#c3d1dc]">Process improvement</p>
@@ -36,7 +36,7 @@ export function ProjectDetail({ eyebrow, title, description, sections = [], tech
         ) : null}
 
         {sections.length > 0 ? (
-          <div className="grid gap-3 sm:grid-cols-2">
+          <div className="grid gap-3 md:grid-cols-2">
             {sections.map((section) => (
               <section key={section.title} className="min-h-32 border border-[#e1e2de] bg-white p-5 sm:p-6">
                 <h2 className="text-[10px] font-semibold uppercase tracking-[0.17em] text-[#19324A]">{section.title}</h2>

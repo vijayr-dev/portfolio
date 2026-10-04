@@ -20,7 +20,7 @@ export default function Home() {
     <>
       <Hero />
       <section className="border-b border-[#e5e5e1] bg-white">
-        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-y-0 px-5 sm:px-8 md:grid-cols-4 lg:px-10">
+        <div className="site-container grid grid-cols-2 gap-y-0 md:grid-cols-4">
           {[
             ["01", "Professional experience"],
             ["02", "Backend engineering"],
@@ -36,7 +36,7 @@ export default function Home() {
       </section>
 
       <section className="bg-[#19324A] text-white">
-        <div className="mx-auto grid max-w-7xl gap-8 px-5 py-12 sm:px-8 md:grid-cols-[1fr_0.8fr] md:items-center lg:px-10">
+        <div className="site-container grid gap-8 py-12 md:grid-cols-[1fr_0.8fr] md:items-center">
           <div>
             <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#c3d1dc]">Featured project · Production automation</p>
             <h2 className="mt-3 max-w-xl text-3xl font-medium tracking-[-0.04em] sm:text-4xl">{featuredProject.title}</h2>
@@ -59,7 +59,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-7xl gap-8 px-5 py-12 sm:px-8 md:grid-cols-[0.75fr_1.25fr] lg:px-10">
+      <section className="site-container grid gap-8 py-12 md:grid-cols-[0.75fr_1.25fr]">
         <div>
           <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#19324A]">Career snapshot</p>
           <h2 className="mt-2 text-2xl font-medium tracking-[-0.03em] text-[#171717]">A steady progression</h2>
@@ -81,7 +81,7 @@ export default function Home() {
       </section>
 
       <section className="border-y border-[#dce2e6] bg-[#E9EFF3]">
-        <div className="mx-auto grid max-w-7xl gap-6 px-5 py-9 sm:px-8 md:grid-cols-[1fr_2fr] md:items-center lg:px-10">
+        <div className="site-container grid gap-6 py-9 md:grid-cols-[1fr_2fr] md:items-center">
           <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#19324A]">Recognition</p>
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div>
@@ -96,7 +96,7 @@ export default function Home() {
       <YouTubeSection />
 
       <section className="bg-white">
-        <div className="mx-auto flex max-w-7xl flex-col gap-5 px-5 py-9 sm:px-8 md:flex-row md:items-center md:justify-between lg:px-10">
+        <div className="site-container flex flex-col gap-5 py-9 md:flex-row md:items-center md:justify-between">
           <div>
             <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#19324A]">Explore more</p>
             <h2 className="mt-2 text-xl font-medium text-[#171717]">Experience, projects, and more.</h2>

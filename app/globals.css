@@ -45,6 +45,12 @@ img {
   max-width: 100%;
 }
 
+.site-container {
+  width: calc(100% - clamp(2rem, 6vw, 6rem));
+  max-width: 80rem;
+  margin-inline: auto;
+}
+
 main {
   min-height: 100vh;
 }

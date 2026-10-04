@@ -8,7 +8,7 @@ const categoryNames: Record<string, string> = {
 
 export function Skills() {
   return (
-    <section className="mx-auto max-w-7xl px-5 py-9 sm:px-8 md:py-12 lg:px-10">
+    <section className="site-container py-9 md:py-12">
       <div className="grid gap-3 md:grid-cols-2">
         {skillGroups.map((group, index) => (
           <article key={group.title} className={`border p-5 sm:p-6 ${index % 2 === 0 ? "border-[#e1e2de] bg-white" : "border-[#d7e0e5] bg-[#E9EFF3]"} ${index === skillGroups.length - 1 ? "md:col-span-2" : ""}`}>

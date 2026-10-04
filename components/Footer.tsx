@@ -4,7 +4,7 @@ import { navItems, socialLinks } from "@/data/portfolio";
 export function Footer() {
   return (
     <footer className="border-t border-[#dce2e6] bg-[#E9EFF3]">
-      <div className="mx-auto max-w-7xl px-5 py-9 sm:px-8 lg:px-10">
+      <div className="site-container py-9">
         <div className="grid gap-8 md:grid-cols-[1.1fr_1.5fr_auto] md:items-start">
           <div>
             <Link href="/" className="text-xs font-semibold uppercase tracking-[0.16em] text-[#19324A]">Divyansh Rathore</Link>
