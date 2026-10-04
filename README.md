@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Divyansh Rathore Portfolio
 
-## Getting Started
+A multi-page professional portfolio built with Next.js App Router, React, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+## Pages
+
+- `/` — Home
+- `/about` — Biography, career journey, education, interests, and digital seva
+- `/experience` — Professional timeline
+- `/projects` — Projects overview
+- `/projects/production-automation` — Production automation case study
+- `/projects/healthcare-hackathon` — KakushIN concept
+- `/projects/client-website` — Client website
+- `/projects/digital-seva` — Digital seva website
+- `/skills`, `/achievements`, `/certifications`, `/youtube`, `/contact`
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## YouTube setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The server-side route at `/api/youtube` fetches current uploads through the YouTube Data API. It reads credentials only on the server.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Copy `.env.example` to `.env.local`.
+2. Set `YOUTUBE_API_KEY` and `YOUTUBE_CHANNEL_ID`.
 
-## Learn More
+Without credentials, the video area stays empty and offers a link to the channel. It does not show fabricated video entries or thumbnails.
 
-To learn more about Next.js, take a look at the following resources:
+## Portrait image
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The provided portrait is at `/images/divyansh-portrait.png` (file path: `public/images/divyansh-portrait.png`). It is referenced without editing and displayed with its natural aspect ratio. Next.js Image Optimization serves responsive, optimized versions for the browser.
